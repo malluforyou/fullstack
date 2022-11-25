@@ -1,0 +1,16 @@
+<?php
+session_start();
+?>
+<html>
+
+<body>
+<form action="process.php" method="post">
+ Name: <input type="text" name="username" value="<?php echo $_SESSION['u']; ?>" />
+ <input type="submit" value="Submit"/>
+  </form>
+ <form action="register.php" method="post">
+  <input type="submit" value="Register a new user" />
+  </form>
+
+   </body>
+    </html>
